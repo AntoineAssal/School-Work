@@ -1,0 +1,1 @@
+The  purpose of this program is to practice and make use of java I/O classes and exception handling, this program takes input files, processes them and outputs the sources found in the files to the corresponding format and then create their own files for each format.
