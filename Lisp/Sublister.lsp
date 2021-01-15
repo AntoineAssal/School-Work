@@ -1,0 +1,32 @@
+(defun list-len(lst)
+    (if (null lst)
+        0
+        (+ 1 (list-len (cdr lst)))
+    )
+)
+
+(defun sub-list (lst &optional (x 1) (y (list-len lst)))
+    (if (equal nil x)
+        (setf x 1)
+    )
+    (if (< y x)
+        nil
+        (let* ((a 1) (lst1 '()) (lst2 lst) )
+            (loop
+                (when (< a x)
+                 (setf a (+ a 1))
+                 (setf lst2 (cdr lst2))
+                ) 
+                (when (and (>= a x) (<= a y))
+                    (setf a (+ a 1))
+                    (setf lst1 (append lst1 (list (car lst2))))
+                    (setf lst2 (cdr lst2) )
+                )
+                (if (> a y) (return lst1))
+        )
+    )
+    )
+)
+
+(princ (sub-list '(1 6 12) 2 3))
+(print (sub-list '(1 6 12) 4 2))
