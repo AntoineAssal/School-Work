@@ -36,3 +36,8 @@ T
 >(isBinaryTree '(8 (3 (1 () ()) (9 (4 () ())(7 () ()))) (10 () (14 (13) ()))))
 NIL
 ```
+## [Traingle](triangle.lsp)
+A  function that takes an integer as the argument and prints a triangle of stars as shown in the example output. If the input is 0, decimal or string, it should print an appropriate error message. positive integers print left-justifided triangles, whereas for the negative numbers the printed triangles are right-justified.
+<p align = "center">
+<img src="./triangle.png" height="400" width="200">
+</p>
