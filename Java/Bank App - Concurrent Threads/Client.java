@@ -201,13 +201,13 @@ public class Client extends Thread {
             System.out.println("\n Receiving ending now!!");
             receiveClientEndTime = System.currentTimeMillis();
             receiveDone=true;
-            //objNetwork.disconnect(objNetwork.getClientIP());
+            bjNetwork.disconnect(objNetwork.getClientIP());
             System.out.println("\n Terminating the Client's recieving thread with running time : " + (receiveClientEndTime - receiveClientStartTime) + " milliseconds.");
 
         }
-        if (sendDone&&receiveDone){
-            objNetwork.disconnect(objNetwork.getClientIP()); // Make sure to only disconnect when both sending and receiving transactions are terminated.
-        }
+        //if (sendDone&&receiveDone){
+           // objNetwork.disconnect(objNetwork.getClientIP()); // Make sure to only disconnect when both sending and receiving transactions are terminated.
+        //}
 
 
     }
