@@ -1,4 +1,4 @@
-package FX_W20PKG;
+package Infrastructures.Main;
 
 public class HighRise extends Building {
     private double highRise; // describes the height of the high-rise.

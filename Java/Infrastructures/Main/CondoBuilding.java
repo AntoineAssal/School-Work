@@ -1,4 +1,4 @@
-package FX_W20PKG;
+package Infrastructures.Main;
 
 public class CondoBuilding extends ResidentialBuilding {
     private int numOfUnits; // describes the number of condo units the building has.

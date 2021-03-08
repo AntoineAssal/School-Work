@@ -1,4 +1,4 @@
-package FX_W20PKG;
+package Infrastructures.Main;
 
 public class Building extends Structure{
     private double landSpace; //amount of land space of the building

@@ -1,6 +1,6 @@
-package CargoAirport;
+package Infrastructures.CargoAirport;
 
-import FX_W20PKG.Airport;
+import Infrastructures.Main.Airport;
 
 public class CargoAirport extends Airport {
     private double landedWeight; // describes the weight of landed goods on the airport. for an airport to be classified

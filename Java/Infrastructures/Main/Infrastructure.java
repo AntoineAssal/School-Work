@@ -1,4 +1,4 @@
-package FX_W20PKG;
+package Infrastructures.Main;
 
 import CargoAirport.CargoAirport;
 import CommercialAirport.CommercialAirport;

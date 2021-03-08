@@ -1,4 +1,4 @@
-package FX_W20PKG;
+package Infrastructures.Main;
 
 public class Structure {
     private int yearOfCreation;

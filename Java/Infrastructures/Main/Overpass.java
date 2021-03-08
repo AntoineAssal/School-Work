@@ -1,4 +1,4 @@
-package FX_W20PKG;
+package Infrastructures.Main;
 
 public class Overpass extends Bridge {
     private double maxLoad; // indicate the maximum load/weight accommodated by the overpass

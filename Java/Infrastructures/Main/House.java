@@ -1,4 +1,4 @@
-package FX_W20PKG;
+package Infrastructures.Main;
 
 public class House extends ResidentialBuilding {
     private double numberOfRooms; // describes the number of rooms in the house

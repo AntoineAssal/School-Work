@@ -1,6 +1,6 @@
-package CommercialAirport;
+package Infrastructures.CommercialAirport;
 
-import FX_W20PKG.Airport;
+import Infrastructures.Main.Airport;
 
 public class CommercialAirport extends Airport {
     private int numOfGates;

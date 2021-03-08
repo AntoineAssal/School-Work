@@ -1,9 +1,9 @@
 # School Work
 Collection of my projects and assignments submitted for various university courses. 
 # Java
-## [Bibliography Maker](https://github.com/AntoineAssal/School-Work/tree/master/Java/Bibliography%20Maker)
+## [Bibliography_Maker](https://github.com/AntoineAssal/School-Work/tree/master/Java/Bibliography%20Maker)
 The  purpose of this program is to practice and make use of java I/O classes and exception handling, this program takes input files, processes them and outputs the sources found in the files to the corresponding format and then create their own files for each format.
-## [Intelligent SIDC (Smart Database/ADT)](https://github.com/AntoineAssal/School-Work/tree/master/Java/Intelligent%20SIDC)
+## [Intelligent_SIDC (Smart Database/ADT)](https://github.com/AntoineAssal/School-Work/tree/master/Java/Intelligent%20SIDC)
 This program creates a Dynamic Student Database (Intelligent `ADT` called `IntelligentSIDC`) that depending on the input size, adapts to its usage and keeps the balance between memory and runtime requirements. For instance, if an `IntelligentSIDC` contains only a small number of entries (e.g., few hundreds), it might use less memory overhead but slower (sorting) algorithms. On the other hand, if the number of contained entries is large (greater than 1000 or even in the range of tens of thousands of elements), it might have a higher memory requirement but faster (sorting) algorithms. `IntelligentSIDC` might be almost constant in size or might grow and/or shrink dynamically. This smart `ADT`'s underlying structure is built using `Sequence` and `AVL ADT`.
 
 The `IntelligentSIDC` implements the following methods:
@@ -47,7 +47,7 @@ Time and Space complexity for every method used in the program.
 - **nextKey(key)** - Time complexity: `O(log n)` Space complexity: `O(1)`
 - **prevKey(key)** - Time complexity: `O(log n)` Space complexity: `O(1)`
 
-## [Binary String Revealer](https://github.com/AntoineAssal/School-Work/tree/master/Java/Binary%20String%20Revealer)
+## [Binary_String_Revealer](https://github.com/AntoineAssal/School-Work/tree/master/Java/Binary%20String%20Revealer)
 This is a program that takes as input a string of any length of random number of binary characters `0` and `1` and a masked `*` character at some positions, and finds all possible sequences of binary strings that can be constructed by replacing the masked `*` character by either `0` or `1`.
 ### Pseudocode 
 ### [Recursive Version](https://github.com/AntoineAssal/School-Work/blob/master/Java/Binary%20String%20Revealer/RecursiveRevealStr.java)
@@ -82,7 +82,7 @@ while inputString is not empty do
     else
         Print out
 ```
-## [CPU Scheduling Simulator](https://github.com/AntoineAssal/School-Work/tree/master/Java/CPU%20Scheduling%20Simulator)
+## [CPU_Scheduling_Simulator](https://github.com/AntoineAssal/School-Work/tree/master/Java/CPU%20Scheduling%20Simulator)
 This project uses a custom built Priority Queue(`PQ`) as a tool to simulate the way a CPU would schedule `jobs` according to their priority. The program will loop with ever iteration being a time slice of the CPU where one of the `jobs` is partially executed until the queue is empty. 
 ### How is it supposed to work?
 - All `jobs` must first be inserted in the `PQ`. Each insertion takes `1` unit of time and sets the `entryTime`, starting from `1`. (when `job1` is inserted, `entryTime` is set to `1`, when `job6` is inserted `entryTime` is set to 6.)

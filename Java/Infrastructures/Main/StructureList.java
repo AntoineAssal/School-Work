@@ -1,4 +1,4 @@
-package FX_W20PKG;
+package Infrastructures.Main;
 
 public class StructureList implements Cloneable {
     private class StructureNode {

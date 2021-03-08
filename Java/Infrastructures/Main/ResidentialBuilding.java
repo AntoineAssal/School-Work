@@ -1,4 +1,4 @@
-package FX_W20PKG;
+package Infrastructures.Main;
 
 public class ResidentialBuilding extends Building {
     private int maxNumberOfHabitants; // the maximum number of expected habitants.
