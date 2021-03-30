@@ -55,8 +55,8 @@ public class UnsortedListPriorityQueue<K, V>  extends AbstractPriorityQueue{
     return list.remove(findMin());
   }
 
-  public Iterator<Position<Pair<K, V>>> iterator() {
-    LinkedPositionalList<Pair<K, V>> linkedList = (LinkedPositionalList<Pair<K, V>>) list;
-    return linkedList.positions().iterator();
-  }
+  //public Iterator<Position<Pair<K, V>>> iterator() {
+    //LinkedPositionalList<Pair<K, V>> linkedList = (LinkedPositionalList<Pair<K, V>>) list;
+    //return linkedList.positions().iterator();
+  //}
 }

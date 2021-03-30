@@ -61,9 +61,9 @@ public class LinkedHeapPriorityQueue<K, V> extends AbstractPriorityQueue<K, V> {
     return size;
   }
 
-  public Iterator<Pair<K, V>> iterator() {
-    return null;
-  }
+  //public Iterator<Pair<K, V>> iterator() {
+   // return null;
+ // }
 
   public Iterable<Position<Pair<K, V>>> positions() {
     return null;

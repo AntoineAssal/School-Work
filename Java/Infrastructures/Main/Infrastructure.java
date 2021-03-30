@@ -1,7 +1,7 @@
 package Infrastructures.Main;
 
-import CargoAirport.CargoAirport;
-import CommercialAirport.CommercialAirport;
+import Infrastructures.CargoAirport.*;
+import Infrastructures.CommercialAirport.*;
 
 import java.io.*;
 import java.util.ArrayList;

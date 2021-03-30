@@ -31,3 +31,4 @@ public abstract class AbstractPriorityQueue<K,V> implements PriorityQueue<K,V> {
     public boolean isEmpty() {
         return size() == 0;
     }
+}
