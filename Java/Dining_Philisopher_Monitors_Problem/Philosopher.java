@@ -3,13 +3,11 @@ package Dining_Philisopher_Monitors_Problem;
 import Dining_Philisopher_Monitors_Problem.common.*;
 
 /**
- * Class Philosopher.
- * Outlines main subrutines of our virtual philosopher.
+ * Class Philosopher. Outlines main subrutines of our virtual philosopher.
  *
  * @author Serguei A. Mokhov, mokhov@cs.concordia.ca
  */
-public class Philosopher extends BaseThread
-{
+public class Philosopher extends BaseThread {
 	/**
 	 * Max time an action can take (in milliseconds)
 	 */
@@ -27,9 +25,11 @@ public class Philosopher extends BaseThread
 	{
 		try
 		{
-			// ...
+			System.out.println("Philosopher " + iTID + " started eating");
+			yield();
 			sleep((long)(Math.random() * TIME_TO_WASTE));
-			// ...
+			yield();
+			System.out.println("Philosopher " + iTID + " finished eating");
 		}
 		catch(InterruptedException e)
 		{
@@ -49,7 +49,19 @@ public class Philosopher extends BaseThread
 	 */
 	public void think()
 	{
-		// ...
+		try{
+			System.out.println("Philosopher " + iTID + " started thinking");
+			yield();
+			sleep((long)(Math.random() * TIME_TO_WASTE));
+			yield();
+			System.out.println("Philosopher " + iTID + " finished thinking");
+		}
+			catch(InterruptedException e)
+		{
+			System.err.println("Philosopher.thinking():");
+			DiningPhilosophers.reportException(e);
+			System.exit(1);
+		}		
 	}
 
 	/**
@@ -62,11 +74,20 @@ public class Philosopher extends BaseThread
 	 */
 	public void talk()
 	{
-		// ...
-
-		saySomething();
-
-		// ...
+		try{
+			System.out.println("Philosopher " + iTID + " started talking");
+			yield();
+			saySomething();
+			sleep((long)(Math.random() * TIME_TO_WASTE));
+			yield();
+			System.out.println("Philosopher " + iTID + " finished talking");
+		}
+			catch(InterruptedException e)
+		{
+			System.err.println("Philosopher.talking():");
+			DiningPhilosophers.reportException(e);
+			System.exit(1);
+		}		
 	}
 
 	/**
@@ -84,42 +105,29 @@ public class Philosopher extends BaseThread
 
 			think();
 
-			/*
-			 * TODO:
-			 * A decision is made at random whether this particular
-			 * philosopher is about to say something terribly useful.
-			 */
-			if(true == false)
-			{
-				// Some monitor ops down here...
+			if ((int)(Math.random()*4) ==1){
+				DiningPhilosophers.soMonitor.requestTalk();
 				talk();
-				// ...
+				DiningPhilosophers.soMonitor.endTalk();
 			}
+			yield();
 
-			Philosopher.yield();
+			
 		}
 	} // run()
 
 	/**
-	 * Prints out a phrase from the array of phrases at random.
-	 * Feel free to add your own phrases.
+	 * Prints out a phrase from the array of phrases at random. Feel free to add
+	 * your own phrases.
 	 */
-	public void saySomething()
-	{
-		String[] astrPhrases =
-		{
-			"Eh, it's not easy to be a philosopher: eat, think, talk, eat...",
-			"You know, true is false and false is true if you think of it",
-			"2 + 2 = 5 for extremely large values of 2...",
-			"If thee cannot speak, thee must be silent",
-			"My number is " + getTID() + ""
-		};
+	public void saySomething() {
+		String[] astrPhrases = { "Eh, it's not easy to be a philosopher: eat, think, talk, eat...",
+				"You know, true is false and false is true if you think of it",
+				"2 + 2 = 5 for extremely large values of 2...", "If thee cannot speak, thee must be silent",
+				"My number is " + getTID() + "" };
 
-		System.out.println
-		(
-			"Philosopher " + getTID() + " says: " +
-			astrPhrases[(int)(Math.random() * astrPhrases.length)]
-		);
+		System.out.println(
+				"Philosopher " + getTID() + " says: " + astrPhrases[(int) (Math.random() * astrPhrases.length)]);
 	}
 }
 
