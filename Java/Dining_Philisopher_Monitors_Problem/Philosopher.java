@@ -14,25 +14,16 @@ public class Philosopher extends BaseThread {
 	public static final long TIME_TO_WASTE = 1000;
 
 	/**
-	 * The act of eating.
-	 * - Print the fact that a given phil (their TID) has started eating.
-	 * - yield
-	 * - Then sleep() for a random interval.
-	 * - yield
-	 * - The print that they are done eating.
+	 * The act of eating. - Print the fact that a given phil (their TID) has started
+	 * eating. - yield - Then sleep() for a random interval. - yield - The print
+	 * that they are done eating.
 	 */
-	public void eat()
-	{
-		try
-		{
-			System.out.println("Philosopher " + iTID + " started eating");
-			yield();
-			sleep((long)(Math.random() * TIME_TO_WASTE));
-			yield();
-			System.out.println("Philosopher " + iTID + " finished eating");
-		}
-		catch(InterruptedException e)
-		{
+	public void eat() {
+		try {
+			System.out.println("Philosopher " + getTID() + " started eating");
+			sleep((long) (Math.random() * TIME_TO_WASTE));
+			System.out.println("Philosopher " + getTID() + " finished eating");
+		} catch (InterruptedException e) {
 			System.err.println("Philosopher.eat():");
 			DiningPhilosophers.reportException(e);
 			System.exit(1);
@@ -40,79 +31,57 @@ public class Philosopher extends BaseThread {
 	}
 
 	/**
-	 * The act of thinking.
-	 * - Print the fact that a given phil (their TID) has started thinking.
-	 * - yield
-	 * - Then sleep() for a random interval.
-	 * - yield
-	 * - The print that they are done thinking.
+	 * The act of thinking. - Print the fact that a given phil (their TID) has
+	 * started thinking. - yield - Then sleep() for a random interval. - yield - The
+	 * print that they are done thinking.
 	 */
-	public void think()
-	{
-		try{
-			System.out.println("Philosopher " + iTID + " started thinking");
-			yield();
-			sleep((long)(Math.random() * TIME_TO_WASTE));
-			yield();
-			System.out.println("Philosopher " + iTID + " finished thinking");
-		}
-			catch(InterruptedException e)
-		{
-			System.err.println("Philosopher.thinking():");
+	public void think() {
+		try {
+			System.out.println("Philosopher " + getTID() + " started thinking");
+			sleep((long) (Math.random() * TIME_TO_WASTE));
+			System.out.println("Philosopher " + getTID() + " finished thinking");
+		} catch (InterruptedException e) {
+			System.err.println("Philosopher.think():");
 			DiningPhilosophers.reportException(e);
 			System.exit(1);
-		}		
+		}
 	}
 
 	/**
-	 * The act of talking.
-	 * - Print the fact that a given phil (their TID) has started talking.
-	 * - yield
-	 * - Say something brilliant at random
-	 * - yield
-	 * - The print that they are done talking.
+	 * The act of talking. - Print the fact that a given phil (their TID) has
+	 * started talking. - yield - Say something brilliant at random - yield - The
+	 * print that they are done talking.
 	 */
-	public void talk()
-	{
-		try{
-			System.out.println("Philosopher " + iTID + " started talking");
-			yield();
-			saySomething();
-			sleep((long)(Math.random() * TIME_TO_WASTE));
-			yield();
-			System.out.println("Philosopher " + iTID + " finished talking");
-		}
-			catch(InterruptedException e)
-		{
-			System.err.println("Philosopher.talking():");
-			DiningPhilosophers.reportException(e);
-			System.exit(1);
-		}		
+	public void talk() {
+
+		System.out.println("Philosopher " + getTID() + " started talking");
+		saySomething();
+		System.out.println("Philosopher " + getTID() + " finished talking");
+
 	}
 
 	/**
 	 * No, this is not the act of running, just the overridden Thread.run()
 	 */
-	public void run()
-	{
-		for(int i = 0; i < DiningPhilosophers.DINING_STEPS; i++)
-		{
-			DiningPhilosophers.soMonitor.pickUp(getTID());
+	public void run() {
+		for (int i = 0; i < DiningPhilosophers.DINING_STEPS; i++) {
+			try {
+				DiningPhilosophers.soMonitor.pickUp(getTID());
 
-			eat();
+				eat();
 
-			DiningPhilosophers.soMonitor.putDown(getTID());
+				DiningPhilosophers.soMonitor.putDown(getTID());
 
-			think();
+				think();
 
-			if ((int)(Math.random()*4) ==1){
-				DiningPhilosophers.soMonitor.requestTalk();
-				talk();
-				DiningPhilosophers.soMonitor.endTalk();
+				if (Math.random() > 0.5) {
+					DiningPhilosophers.soMonitor.requestTalk();
+					talk();
+					DiningPhilosophers.soMonitor.endTalk();
+				}
+			} catch (InterruptedException e) {
+				e.printStackTrace();
 			}
-			yield();
-
-			
 		}
 	} // run()
 

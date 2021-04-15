@@ -9,34 +9,34 @@ public class Monitor {
 	/*
 	 * ------------ Data members ------------
 	 */
-	Chopstick[] chopsticks;
-	int philos;
-	boolean talking;
+	private Chopstick[] chopsticks;
+	private int philos;
+	private boolean talking;
 
 	private class Chopstick {
-		public boolean holding;
+		public boolean free;
 		public int last;
 
 		public Chopstick() {
-			holding = false;
-			last = 0;
+			free = true;
+			last = -1;
 		}
 
-		public boolean lastCheck(final int piTID) {
-			return last == piTID;
+		public boolean isWith(final int piTID) {
+			return !free && last == piTID;
 		}
 
-		public boolean pickCheck(final int piTID) {
-			return last != piTID && holding;
+		public boolean has(final int piTID) {
+			return !free && piTID != last;
 		}
 
 		public void pickUP(final int piTID) {
-			holding = true;
+			free = false;
 			last = piTID;
 		}
 
 		public void release() {
-			holding = false;
+			free = true;
 		}
 	}
 
@@ -46,6 +46,7 @@ public class Monitor {
 	public Monitor(int piNumberOfPhilosophers) {
 		philos = piNumberOfPhilosophers;
 		chopsticks = new Chopstick[philos];
+		talking = false;
 		for (int i = 0; i < chopsticks.length; i++) {
 			chopsticks[i] = new Chopstick();
 		}
@@ -60,32 +61,22 @@ public class Monitor {
 	 * Grants request (returns) to eat when both chopsticks/forks are available.
 	 * Else forces the philosopher to wait()
 	 */
-	public synchronized void pickUp(final int piTID) {
-		int id = piTID - 1; // dont go out of bound
-
+	public synchronized void pickUp(final int piTID) throws InterruptedException {
+		Chopstick left = chopsticks[piTID-1];
+		Chopstick right = chopsticks[piTID%philos];		
 		while (true) {
-			if (chopsticks[id].pickCheck(piTID) || chopsticks[(id + 1) % philos].pickCheck(piTID)) {
-				// First or second is picked up, make sure its not same as current then pick it
-				// up
-				if (!chopsticks[id].holding && !chopsticks[id].lastCheck(piTID)) {
-					chopsticks[id].pickUP(piTID);
-				} else if (!chopsticks[(id + 1 % philos)].holding && !chopsticks[(id + 1) % philos].lastCheck(piTID)) {
-					chopsticks[(id + 1) % philos].pickUP(piTID);
+			if (left.has(piTID) || right.has(piTID)){
+				if (left.free && left.last!=piTID){
+					left.pickUP(piTID);
 				}
+				if(right.free && right.last != piTID){
+					right.pickUP(piTID);
+				}
+				wait();
 			}
-
-			else {
-				chopsticks[id].pickUP(piTID);
-				chopsticks[(id + 1) % philos].pickUP(piTID);
-				break;
-			}
-
-			try {
-				wait(); // until notifyAll()
-			} catch (InterruptedException e) {
-				System.err.println("Monitor.pickUP()");
-				DiningPhilosophers.reportException(e);
-				System.exit(1);
+			else{
+				left.pickUP(piTID);
+				right.pickUP(piTID);
 			}
 		}
 
@@ -97,7 +88,7 @@ public class Monitor {
 	 */
 	public synchronized void putDown(final int piTID) {
 		chopsticks[piTID - 1].release();
-		chopsticks[(piTID) % philos].release();
+		chopsticks[piTID % philos].release();
 		notifyAll();
 	}
 
@@ -105,17 +96,15 @@ public class Monitor {
 	 * Only one philopher at a time is allowed to philosophy (while she is not
 	 * eating).
 	 */
-	public synchronized void requestTalk() {
-		while (talking) {
-			try {
+	public synchronized void requestTalk() throws InterruptedException {
+		while (true) {
+			if (talking) {
 				wait();
-			} catch (InterruptedException e) {
-				System.err.println("Monitor.requestTalk():");
-				DiningPhilosophers.reportException(e);
-				System.exit(1);
+			} else {
+				talking = true;
+				break;
 			}
 		}
-		talking = true;
 	}
 
 	/**

@@ -19,48 +19,35 @@ public class DiningPhilosophers {
 	public static Monitor soMonitor = null;
 
 	public static void main(String[] argv) {
-
-		Scanner keyboard = new Scanner(System.in);
-		int iPhilosophers = 0;
-		String userInput = "";
-
-		System.out.println("How many philisophers do we want on the table");
-
 		try {
-			userInput = keyboard.nextLine();
-			iPhilosophers = Integer.parseInt(userInput);
+			int iPhilosophers = argv.length > 0 ? Integer.parseInt(argv[0]) : DEFAULT_NUMBER_OF_PHILOSOPHERS;
 
-			if (iPhilosophers < 1)
-				throw new Exception();
-		}
-
-		catch (Exception e) {
-			System.out.println(iPhilosophers + " is not a valid positive decimal integer, using default number.");
-			iPhilosophers = DEFAULT_NUMBER_OF_PHILOSOPHERS;
-		}
-
-		try {
 			soMonitor = new Monitor(iPhilosophers);
-			Philosopher allPhilosophers[] = new Philosopher[iPhilosophers];
-			// sit em down
-			for (int i = 0; i < iPhilosophers; i++) {
-				allPhilosophers[i] = new Philosopher();
-				allPhilosophers[i].start();
-			}
-
-			System.out.println(iPhilosophers + " philosophers came in for dinner today");
+			Philosopher allPhilos[] = new Philosopher[iPhilosophers];
 
 			for (int i = 0; i < iPhilosophers; i++) {
-				allPhilosophers[i].join();
-				System.out.println("All philosophers have left. System terminates normally");
+				allPhilos[i] = new Philosopher();
+				allPhilos[i].start();
 			}
 
+			System.out.println(iPhilosophers + " philosopher(s) came in for a dinner.");
+
+			for (int i = 0; i < iPhilosophers; i++) {
+				allPhilos[i].join();
+			}
+			
+			System.out.println("All philosophers have left. System terminates normally.");
+
+		} catch (NumberFormatException e) {
+			System.out.println("\"" + argv[0] + "\" is not a valid positive integer.");
+			System.out.println("Usage: java DiningPhilosophers [NUMBER_OF_PHILOSOPHER]");
+			System.exit(1);
+			return;
 		} catch (InterruptedException e) {
 			System.err.println("main():");
 			reportException(e);
 			System.exit(1);
 		}
-
 	} // main()
 
 	/**
