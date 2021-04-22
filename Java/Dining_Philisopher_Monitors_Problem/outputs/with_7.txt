@@ -1,0 +1,333 @@
+Please Input number of philosopher on the table : 7
+7 philosopher(s) came in for a dinner.
+*** 1: started eating
+*** 5: started eating
+*** 5: finished eating
+*** 4: started eating
+*** 5: light bulb went on! ***
+*** 4: finished eating
+*** 4: light bulb went on! ***
+*** 5: light bulb is no more.
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 2: started eating
+*** 7: started eating
+*** 4: light bulb is no more.
+*** 7: finished eating
+*** 7: light bulb went on! ***
+*** 6: started eating
+*** 6: finished eating
+*** 6: light bulb went on! ***
+*** 5: started eating
+*** 7: light bulb is no more.
+*** 7: started eating
+*** 1: light bulb is no more.
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 3: started eating
+*** 5: finished eating
+*** 5: light bulb went on! ***
+*** 2: light bulb is no more.
+*** 6: light bulb is no more.
+*** 7: finished eating
+*** 7: light bulb went on! ***
+*** 6: started eating
+*** 1: started eating
+*** 6: finished eating
+*** 6: light bulb went on! ***
+*** 3: finished eating
+*** 3: light bulb went on! ***
+*** 4: started eating
+*** 4: finished eating
+*** 4: light bulb went on! ***
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 2: started eating
+*** 3: light bulb is no more.
+*** 3: ready to talk
+Philosopher 3 says: Instead of colorizing photos, in 50 years we will be removing snapchat filters.
+*** 5: light bulb is no more.
+*** 5: started eating
+*** 6: light bulb is no more.
+*** 7: light bulb is no more.
+*** 4: light bulb is no more.
+*** 1: light bulb is no more.
+*** 3: done talking.
+*** 4: ready to talk
+Philosopher 4 says: Instead of colorizing photos, in 50 years we will be removing snapchat filters.
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 3: started eating
+*** 1: started eating
+*** 5: finished eating
+*** 6: started eating
+*** 5: light bulb went on! ***
+*** 3: finished eating
+*** 3: light bulb went on! ***
+*** 4: done talking.
+*** 7: ready to talk
+Philosopher 7 says: If my calculator had a history, it would be more embarrassing than my browser history.
+*** 4: started eating
+*** 3: light bulb is no more.
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 1: light bulb is no more.
+*** 1: started eating
+*** 4: finished eating
+*** 4: light bulb went on! ***
+*** 3: started eating
+*** 2: light bulb is no more.
+*** 5: light bulb is no more.
+*** 6: finished eating
+*** 6: light bulb went on! ***
+*** 7: done talking.
+*** 5: ready to talk
+Philosopher 5 says: Nothing is on fire, fire is on things.
+*** 3: finished eating
+*** 3: light bulb went on! ***
+*** 5: done talking.
+*** 5: started eating
+*** 5: finished eating
+*** 5: light bulb went on! ***
+*** 4: light bulb is no more.
+*** 4: started eating
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 2: started eating
+*** 7: started eating
+*** 5: light bulb is no more.
+*** 5: ready to talk
+Philosopher 5 says: In English, execute and kill have the same meaning, but on a computer, they're opposites.
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 5: done talking.
+*** 4: finished eating
+*** 4: light bulb went on! ***
+*** 5: started eating
+*** 3: light bulb is no more.
+*** 3: started eating
+*** 6: light bulb is no more.
+*** 6: ready to talk
+Philosopher 6 says: Nothing is on fire, fire is on things.
+*** 4: light bulb is no more.
+*** 5: finished eating
+*** 5: light bulb went on! ***
+*** 5: light bulb is no more.
+*** 5: started eating
+*** 7: finished eating
+*** 7: light bulb went on! ***
+*** 6: done talking.
+*** 4: ready to talk
+Philosopher 4 says: If my calculator had a history, it would be more embarrassing than my browser history.
+*** 1: light bulb is no more.
+*** 2: light bulb is no more.
+*** 3: finished eating
+*** 3: light bulb went on! ***
+*** 3: light bulb is no more.
+*** 3: started eating
+*** 4: done talking.
+*** 1: ready to talk
+Philosopher 1 says: In English, execute and kill have the same meaning, but on a computer, they're opposites.
+*** 3: finished eating
+*** 3: light bulb went on! ***
+*** 7: light bulb is no more.
+*** 5: finished eating
+*** 4: started eating
+*** 5: light bulb went on! ***
+*** 6: started eating
+*** 5: light bulb is no more.
+*** 1: done talking.
+*** 1: started eating
+*** 2: ready to talk
+Philosopher 2 says: Instead of colorizing photos, in 50 years we will be removing snapchat filters.
+*** 6: finished eating
+*** 6: light bulb went on! ***
+*** 4: finished eating
+*** 4: light bulb went on! ***
+*** 5: started eating
+*** 2: done talking.
+*** 3: light bulb is no more.
+*** 3: ready to talk
+Philosopher 3 says: Your stomach thinks that all potatoes are mashed.
+*** 3: done talking.
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 7: started eating
+*** 2: started eating
+*** 6: light bulb is no more.
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 3: started eating
+*** 3: finished eating
+*** 3: light bulb went on! ***
+*** 2: light bulb is no more.
+*** 2: started eating
+*** 1: light bulb is no more.
+*** 7: finished eating
+*** 7: light bulb went on! ***
+*** 4: light bulb is no more.
+*** 5: finished eating
+*** 5: light bulb went on! ***
+*** 4: started eating
+*** 6: started eating
+*** 7: light bulb is no more.
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 1: started eating
+*** 5: light bulb is no more.
+*** 4: finished eating
+*** 4: light bulb went on! ***
+*** 2: light bulb is no more.
+*** 2: ready to talk
+Philosopher 2 says: If my calculator had a history, it would be more embarrassing than my browser history.
+*** 3: light bulb is no more.
+*** 3: started eating
+*** 6: finished eating
+*** 6: light bulb went on! ***
+*** 5: started eating
+*** 6: light bulb is no more.
+*** 2: done talking.
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 7: started eating
+*** 4: light bulb is no more.
+*** 5: finished eating
+*** 5: light bulb went on! ***
+*** 7: finished eating
+*** 7: light bulb went on! ***
+*** 6: started eating
+*** 3: finished eating
+*** 3: light bulb went on! ***
+*** 4: started eating
+*** 2: started eating
+*** 1: light bulb is no more.
+*** 5: light bulb is no more.
+*** 6: finished eating
+*** 6: light bulb went on! ***
+*** 3: light bulb is no more.
+*** 3: ready to talk
+Philosopher 3 says: Your stomach thinks that all potatoes are mashed.
+*** 4: finished eating
+*** 4: light bulb went on! ***
+*** 5: started eating
+*** 7: light bulb is no more.
+*** 3: done talking.
+*** 2: finished eating
+*** 3: started eating
+*** 1: started eating
+*** 2: light bulb went on! ***
+*** 4: light bulb is no more.
+*** 5: finished eating
+*** 5: light bulb went on! ***
+*** 2: light bulb is no more.
+*** 2: ready to talk
+Philosopher 2 says: Your stomach thinks that all potatoes are mashed.
+*** 3: finished eating
+*** 3: light bulb went on! ***
+*** 4: started eating
+*** 6: light bulb is no more.
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 7: started eating
+*** 1: light bulb is no more.
+*** 3: light bulb is no more.
+*** 2: done talking.
+*** 2: started eating
+*** 7: finished eating
+*** 7: light bulb went on! ***
+*** 6: started eating
+*** 5: light bulb is no more.
+*** 4: finished eating
+*** 4: light bulb went on! ***
+*** 4: light bulb is no more.
+*** 6: finished eating
+*** 6: light bulb went on! ***
+*** 5: started eating
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 3: started eating
+*** 1: started eating
+*** 6: light bulb is no more.
+*** 6: ready to talk
+Philosopher 6 says: Instead of colorizing photos, in 50 years we will be removing snapchat filters.
+*** 7: light bulb is no more.
+*** 5: finished eating
+*** 5: light bulb went on! ***
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 7: started eating
+*** 2: light bulb is no more.
+*** 1: light bulb is no more.
+*** 7: finished eating
+*** 7: light bulb went on! ***
+*** 5: light bulb is no more.
+*** 3: finished eating
+*** 4: started eating
+*** 2: started eating
+*** 3: light bulb went on! ***
+*** 6: done talking.
+*** 6: started eating
+*** 3: light bulb is no more.
+*** 4: finished eating
+*** 4: light bulb went on! ***
+*** 7: light bulb is no more.
+*** 7: ready to talk
+Philosopher 7 says: In English, execute and kill have the same meaning, but on a computer, they're opposites.
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 3: started eating
+*** 1: started eating
+*** 7: done talking.
+*** 3: finished eating
+*** 3: light bulb went on! ***
+*** 3: light bulb is no more.
+*** 2: light bulb is no more.
+*** 4: light bulb is no more.
+*** 4: started eating
+*** 6: finished eating
+*** 6: light bulb went on! ***
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 7: started eating
+*** 2: started eating
+*** 6: light bulb is no more.
+*** 4: finished eating
+*** 4: light bulb went on! ***
+*** 4: light bulb is no more.
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 7: finished eating
+*** 7: light bulb went on! ***
+*** 6: started eating
+*** 1: light bulb is no more.
+*** 1: started eating
+*** 2: light bulb is no more.
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 2: started eating
+*** 6: finished eating
+*** 6: light bulb went on! ***
+*** 7: light bulb is no more.
+*** 7: started eating
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 7: finished eating
+*** 7: light bulb went on! ***
+*** 1: light bulb is no more.
+*** 7: light bulb is no more.
+*** 7: ready to talk
+Philosopher 7 says: If my calculator had a history, it would be more embarrassing than my browser history.
+*** 2: light bulb is no more.
+*** 7: done talking.
+*** 7: started eating
+*** 7: finished eating
+*** 7: light bulb went on! ***
+*** 6: light bulb is no more.
+*** 6: started eating
+*** 6: finished eating
+*** 6: light bulb went on! ***
+*** 7: light bulb is no more.
+*** 6: light bulb is no more.
+All philosophers have left. System terminates normally.
+
+Process finished with exit code 0
