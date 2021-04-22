@@ -1,0 +1,92 @@
+Please Input number of philosopher on the table : 2
+2 philosopher(s) came in for a dinner.
+*** 1: started eating
+*** 1: finished eating
+*** 2: started eating
+*** 1: light bulb went on! ***
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 1: light bulb is no more.
+*** 1: ready to talk
+Philosopher 1 says: Instead of colorizing photos, in 50 years we will be removing snapchat filters.
+*** 2: light bulb is no more.
+*** 2: started eating
+*** 1: done talking.
+*** 2: finished eating
+*** 1: started eating
+*** 2: light bulb went on! ***
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 1: light bulb is no more.
+*** 1: started eating
+*** 2: light bulb is no more.
+*** 2: ready to talk
+Philosopher 2 says: Instead of colorizing photos, in 50 years we will be removing snapchat filters.
+*** 2: done talking.
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 2: started eating
+*** 1: light bulb is no more.
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 1: started eating
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 2: light bulb is no more.
+*** 2: started eating
+*** 1: light bulb is no more.
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 1: started eating
+*** 2: light bulb is no more.
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 2: started eating
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 1: light bulb is no more.
+*** 1: started eating
+*** 2: light bulb is no more.
+*** 2: ready to talk
+Philosopher 2 says: Nothing is on fire, fire is on things.
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 2: done talking.
+*** 2: started eating
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 2: light bulb is no more.
+*** 2: started eating
+*** 1: light bulb is no more.
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 1: started eating
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 2: light bulb is no more.
+*** 2: started eating
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 1: light bulb is no more.
+*** 1: started eating
+*** 2: light bulb is no more.
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 2: started eating
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 1: light bulb is no more.
+*** 1: started eating
+*** 2: light bulb is no more.
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 2: started eating
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 2: light bulb is no more.
+*** 1: light bulb is no more.
+*** 1: started eating
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 1: light bulb is no more.
+All philosophers have left. System terminates normally.
