@@ -1,0 +1,214 @@
+Please Input number of philosopher on the table : -5.a
+
+% java DiningPhilosophers -5.a
+-5.a is not a positive decimal integer
+Usage: java DiningPhilosophers [NUMBER_OF_PHILOSOPHERS]
+%
+
+Philosopher 1 started eating
+4 philosopher(s) came in for a dinner.
+Philosopher 1 finished eating
+Philosopher 1 started thinking
+Philosopher 2 started eating
+Philosopher 1 finished thinking
+Philosopher 2 finished eating
+Philosopher 2 started thinking
+Philosopher 3 started eating
+Philosopher 3 finished eating
+Philosopher 3 started thinking
+Philosopher 4 started eating
+Philosopher 3 finished thinking
+Philosopher 3 has started talking
+Philosopher 3 says: My number is 3
+Philosopher 2 finished thinking
+Philosopher 3 has finished talking
+Philosopher 4 finished eating
+Philosopher 4 started thinking
+Philosopher 1 started eating
+Philosopher 1 finished eating
+Philosopher 1 started thinking
+Philosopher 2 started eating
+Philosopher 2 finished eating
+Philosopher 2 started thinking
+Philosopher 3 started eating
+Philosopher 1 finished thinking
+Philosopher 1 has started talking
+Philosopher 1 says: You know, true is false and false is true if you think of it
+Philosopher 2 finished thinking
+Philosopher 4 finished thinking
+Philosopher 3 finished eating
+Philosopher 3 started thinking
+Philosopher 1 has finished talking
+Philosopher 1 started eating
+Philosopher 2 has started talking
+Philosopher 2 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher 1 finished eating
+Philosopher 1 started thinking
+Philosopher 2 has finished talking
+Philosopher 2 started eating
+Philosopher 4 has started talking
+Philosopher 4 says: You know, true is false and false is true if you think of it
+Philosopher 3 finished thinking
+Philosopher 4 has finished talking
+Philosopher 4 started eating
+Philosopher 1 finished thinking
+Philosopher 1 has started talking
+Philosopher 1 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher 2 finished eating
+Philosopher 2 started thinking
+Philosopher 4 finished eating
+Philosopher 4 started thinking
+Philosopher 3 started eating
+Philosopher 4 finished thinking
+Philosopher 3 finished eating
+Philosopher 3 started thinking
+Philosopher 4 started eating
+Philosopher 1 has finished talking
+Philosopher 2 finished thinking
+Philosopher 3 finished thinking
+Philosopher 3 has started talking
+Philosopher 3 says: My number is 3
+Philosopher 4 finished eating
+Philosopher 4 started thinking
+Philosopher 1 started eating
+Philosopher 1 finished eating
+Philosopher 1 started thinking
+Philosopher 2 started eating
+Philosopher 3 has finished talking
+Philosopher 1 finished thinking
+Philosopher 4 finished thinking
+Philosopher 2 finished eating
+Philosopher 2 started thinking
+Philosopher 3 started eating
+Philosopher 3 finished eating
+Philosopher 3 started thinking
+Philosopher 4 started eating
+Philosopher 2 finished thinking
+Philosopher 4 finished eating
+Philosopher 4 started thinking
+Philosopher 1 started eating
+Philosopher 4 finished thinking
+Philosopher 4 has started talking
+Philosopher 4 says: You know, true is false and false is true if you think of it
+Philosopher 4 has finished talking
+Philosopher 3 finished thinking
+Philosopher 1 finished eating
+Philosopher 1 started thinking
+Philosopher 2 started eating
+Philosopher 1 finished thinking
+Philosopher 2 finished eating
+Philosopher 2 started thinking
+Philosopher 3 started eating
+Philosopher 2 finished thinking
+Philosopher 3 finished eating
+Philosopher 3 started thinking
+Philosopher 4 started eating
+Philosopher 3 finished thinking
+Philosopher 4 finished eating
+Philosopher 4 started thinking
+Philosopher 1 started eating
+Philosopher 1 finished eating
+Philosopher 1 started thinking
+Philosopher 2 started eating
+Philosopher 2 finished eating
+Philosopher 2 started thinking
+Philosopher 3 started eating
+Philosopher 1 finished thinking
+Philosopher 1 has started talking
+Philosopher 1 says: My number is 1
+Philosopher 4 finished thinking
+Philosopher 3 finished eating
+Philosopher 3 started thinking
+Philosopher 4 started eating
+Philosopher 2 finished thinking
+Philosopher 2 started eating
+Philosopher 3 finished thinking
+Philosopher 2 finished eating
+Philosopher 2 started thinking
+Philosopher 1 has finished talking
+Philosopher 3 has started talking
+Philosopher 3 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher 4 finished eating
+Philosopher 4 started thinking
+Philosopher 1 started eating
+Philosopher 3 has finished talking
+Philosopher 3 started eating
+Philosopher 2 finished thinking
+Philosopher 1 finished eating
+Philosopher 1 started thinking
+Philosopher 3 finished eating
+Philosopher 3 started thinking
+Philosopher 2 started eating
+Philosopher 4 finished thinking
+Philosopher 4 started eating
+Philosopher 4 finished eating
+Philosopher 4 started thinking
+Philosopher 1 finished thinking
+Philosopher 1 has started talking
+Philosopher 1 says: If thee cannot speak, thee must be silent
+Philosopher 4 finished thinking
+Philosopher 4 started eating
+Philosopher 2 finished eating
+Philosopher 2 started thinking
+Philosopher 3 finished thinking
+Philosopher 2 finished thinking
+Philosopher 4 finished eating
+Philosopher 4 started thinking
+Philosopher 3 started eating
+Philosopher 4 finished thinking
+Philosopher 1 has finished talking
+Philosopher 1 started eating
+Philosopher 2 has started talking
+Philosopher 2 says: You know, true is false and false is true if you think of it
+Philosopher 3 finished eating
+Philosopher 3 started thinking
+Philosopher 2 has finished talking
+Philosopher 1 finished eating
+Philosopher 1 started thinking
+Philosopher 2 started eating
+Philosopher 4 started eating
+Philosopher 2 finished eating
+Philosopher 2 started thinking
+Philosopher 3 finished thinking
+Philosopher 2 finished thinking
+Philosopher 1 finished thinking
+Philosopher 1 has started talking
+Philosopher 1 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher 1 has finished talking
+Philosopher 4 finished eating
+Philosopher 4 started thinking
+Philosopher 1 started eating
+Philosopher 3 started eating
+Philosopher 1 finished eating
+Philosopher 1 started thinking
+Philosopher 4 finished thinking
+Philosopher 4 has started talking
+Philosopher 4 says: You know, true is false and false is true if you think of it
+Philosopher 4 has finished talking
+Philosopher 3 finished eating
+Philosopher 3 started thinking
+Philosopher 4 started eating
+Philosopher 2 started eating
+Philosopher 1 finished thinking
+Philosopher 4 finished eating
+Philosopher 4 started thinking
+Philosopher 2 finished eating
+Philosopher 2 started thinking
+Philosopher 1 started eating
+Philosopher 1 finished eating
+Philosopher 1 started thinking
+Philosopher 1 finished thinking
+Philosopher 3 finished thinking
+Philosopher 3 started eating
+Philosopher 2 finished thinking
+Philosopher 2 has started talking
+Philosopher 2 says: You know, true is false and false is true if you think of it
+Philosopher 3 finished eating
+Philosopher 3 started thinking
+Philosopher 3 finished thinking
+Philosopher 2 has finished talking
+Philosopher 4 finished thinking
+Philosopher 4 has started talking
+Philosopher 4 says: Eh, it's not easy to be a philosopher: eat, think, talk, eat...
+Philosopher 4 has finished talking
+All philosophers have left. System terminates normally.

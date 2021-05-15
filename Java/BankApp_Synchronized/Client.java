@@ -1,6 +1,5 @@
 package BankApp_Synchronized;
 
-
 import java.util.Scanner;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -20,16 +19,16 @@ import java.util.InputMismatchException;
 
 public class Client extends Thread {
 
-    private static int numberOfTransactions;        /* Number of transactions to process */
-    private static int maxNbTransactions;            /* Maximum number of transactions */
-    private static Transactions[] transaction;            /* Transactions to be processed */
-    private String clientOperation;                /* sending or receiving */
+    private static int numberOfTransactions; /* Number of transactions to process */
+    private static int maxNbTransactions; /* Maximum number of transactions */
+    private static Transactions[] transaction; /* Transactions to be processed */
+    private String clientOperation; /* sending or receiving */
 
     /**
      * Constructor method of Client class
-     *
-     * @param
+     * 
      * @return
+     * @param
      */
     Client(String operation) {
         if (operation.equals("sending")) {
@@ -54,9 +53,9 @@ public class Client extends Thread {
 
     /**
      * Accessor method of Client class
-     *
-     * @param
+     * 
      * @return numberOfTransactions
+     * @param
      */
     public int getNumberOfTransactions() {
         return numberOfTransactions;
@@ -64,9 +63,9 @@ public class Client extends Thread {
 
     /**
      * Mutator method of Client class
-     *
-     * @param nbOfTrans
+     * 
      * @return
+     * @param nbOfTrans
      */
     public void setNumberOfTransactions(int nbOfTrans) {
         numberOfTransactions = nbOfTrans;
@@ -74,9 +73,9 @@ public class Client extends Thread {
 
     /**
      * Accessor method of Client class
-     *
-     * @param
+     * 
      * @return clientOperation
+     * @param
      */
     public String getClientOperation() {
         return clientOperation;
@@ -84,9 +83,9 @@ public class Client extends Thread {
 
     /**
      * Mutator method of Client class
-     *
-     * @param operation
+     * 
      * @return
+     * @param operation
      */
     public void setClientOperation(String operation) {
         clientOperation = operation;
@@ -94,16 +93,16 @@ public class Client extends Thread {
 
     /**
      * Reading of the transactions from an input file
-     *
-     * @param
+     * 
      * @return
+     * @param
      */
     public void readTransactions() {
-        Scanner inputStream = null;        /* Transactions input file stream */
-        int i = 0;                            /* Index of transactions array */
+        Scanner inputStream = null; /* Transactions input file stream */
+        int i = 0; /* Index of transactions array */
 
         try {
-            inputStream = new Scanner(new FileInputStream("transaction2.txt"));
+            inputStream = new Scanner(new FileInputStream("src/Banking/transaction.txt"));
         } catch (FileNotFoundException e) {
             System.out.println("File transaction.txt was not found");
             System.out.println("or could not be opened.");
@@ -112,100 +111,114 @@ public class Client extends Thread {
         while (inputStream.hasNextLine()) {
             try {
                 transaction[i] = new Transactions();
-                transaction[i].setAccountNumber(inputStream.next());            /* Read account number */
-                transaction[i].setOperationType(inputStream.next());            /* Read transaction type */
-                transaction[i].setTransactionAmount(inputStream.nextDouble());  /* Read transaction amount */
-                transaction[i].setTransactionStatus("pending");                 /* Set current transaction status */
+                transaction[i].setAccountNumber(inputStream.next()); /* Read account number */
+                transaction[i].setOperationType(inputStream.next()); /* Read transaction type */
+                transaction[i].setTransactionAmount(inputStream.nextDouble()); /* Read transaction amount */
+                transaction[i].setTransactionStatus("pending"); /* Set current transaction status */
                 i++;
             } catch (InputMismatchException e) {
                 System.out.println("Line " + i + "file transactions.txt invalid input");
                 System.exit(0);
             }
-
         }
-        setNumberOfTransactions(i);        /* Record the number of transactions processed */
 
-        /* System.out.println("\n DEBUG : Client.readTransactions() - " + getNumberOfTransactions() + " transactions processed"); */
+        setNumberOfTransactions(i); /* Record the number of transactions processed */
+
+        // System.out.println("\n DEBUG : Client.readTransactions() - " +
+        // getNumberOfTransactions() + " transactions processed");
 
         inputStream.close();
-
     }
 
     /**
      * Sending the transactions to the server
-     *
-     * @param
+     * 
      * @return
+     * @param
      */
     public void sendTransactions() {
-        int i = 0;     /* index of transaction array */
+        int i = 0; /* index of transaction array */
 
         while (i < getNumberOfTransactions()) {
 
-            //	 while (Network.getInBufferStatus().equals("full"))
-            //	{
-            // 	  Thread.yield(); 	/* Yield the cpu if the network input buffer is full */
-            //  }
+            transaction[i].setTransactionStatus("sent"); /* Set current transaction status */
 
-            transaction[i].setTransactionStatus("sent");   /* Set current transaction status */
+            // System.out.println("\n DEBUG : Client.sendTransactions() - sending
+            // transaction on account " + transaction[i].getAccountNumber());
 
-            /* System.out.println("\n DEBUG : Client.sendTransactions() - sending transaction on account " + transaction[i].getAccountNumber()); */
-
-            Network.send(transaction[i]);                            /* Transmit current transaction */
+            Network.send(transaction[i]); /* Transmit current transaction */
             i++;
         }
-
     }
 
     /**
      * Receiving the completed transactions from the server
-     *
-     * @param transact
+     * 
      * @return
+     * @param transact
      */
     public void receiveTransactions(Transactions transact) {
-        int i = 0;     /* Index of transaction array */
+        int i = 0; /* Index of transaction array */
 
         while (i < getNumberOfTransactions()) {
-            // while (Network.getOutBufferStatus().equals("empty"))
-            // {
-            //	 Thread.yield(); 	/* Yield the cpu if the network output buffer is full */
 
-            // }
+            Network.receive(transact); /* Receive updated transaction from the network buffer */
 
-            Network.receive(transact);                                /* Receive updated transaction from the network buffer */
+            // System.out.println("\n DEBUG : Client.receiveTransactions() - receiving
+            // updated transaction on account " + transact.getAccountNumber());
 
-            /* System.out.println("\n DEBUG : Client.receiveTransactions() - receiving updated transaction on account " + transact.getAccountNumber()); */
-
-            System.out.println(transact);                               /* Display updated transaction */
+            System.out.println(transact); /* Display updated transaction */
             i++;
         }
     }
 
     /**
      * Create a String representation based on the Client Object
-     *
-     * @param
+     * 
      * @return String representation
+     * @param
      */
     public String toString() {
-        return ("\n client IP " + Network.getClientIP() + " Connection status" + Network.getClientConnectionStatus() + "Number of transactions " + getNumberOfTransactions());
+        return ("\n client IP " + Network.getClientIP() + " Connection status" + Network.getClientConnectionStatus()
+                + "Number of transactions " + getNumberOfTransactions());
     }
-
 
     /**
      * Code for the run method
-     *
-     * @param
+     * 
      * @return
+     * @param
      */
     public void run() {
         Transactions transact = new Transactions();
         long sendClientStartTime, sendClientEndTime, receiveClientStartTime, receiveClientEndTime;
+        String clientIp = Network.getClientIP();
 
-        /*................................................................................................................................................................................................................*/
+        // Connect to the Network using the Client's IP
+        Network.connect(clientIp);
 
-        System.out.println("\n Terminating client receiving thread - " + " Running time " + (receiveClientEndTime - receiveClientStartTime));
+        // Check if the thread object is sending or receiving
+        if (clientOperation.equals("sending")) {
+            sendClientStartTime = System.currentTimeMillis();
+
+            // Send the transactions (calls the Network's send() method)
+            sendTransactions();
+
+            sendClientEndTime = System.currentTimeMillis();
+            System.out.println("\n Terminating client sending thread - " + " Running time "
+                    + (sendClientEndTime - sendClientStartTime) + " milliseconds");
+        } else {
+            receiveClientStartTime = System.currentTimeMillis();
+
+            // Receive the transactions (Calls the Network's receive() method)
+            receiveTransactions(transact);
+
+            receiveClientEndTime = System.currentTimeMillis();
+            System.out.println("\n Terminating client receiving thread - " + " Running time "
+                    + (receiveClientEndTime - receiveClientStartTime) + " milliseconds");
+
+            // Once it is done, disconnect from the Network.
+            Network.disconnect(clientIp);
+        }
     }
-
 }
