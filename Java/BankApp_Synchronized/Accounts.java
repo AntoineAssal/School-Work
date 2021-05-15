@@ -1,8 +1,4 @@
 package BankApp_Synchronized;
-/** Accounts class
- *
- * @author Kerly Titus
- */
 public class Accounts {
 
     private String accountNumber;       /* Unique account number */

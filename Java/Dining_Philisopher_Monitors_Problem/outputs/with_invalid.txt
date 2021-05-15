@@ -1,0 +1,208 @@
+Please Input number of philosopher on the table : -8
+
+% java DiningPhilosophers -8
+-8 is not a positive decimal integer
+Usage: java DiningPhilosophers [4] 
+%
+
+4 philosopher(s) came in for a dinner.
+*** 1: started eating
+*** 1: finished eating
+*** 2: started eating
+*** 4: started eating
+*** 1: light bulb went on! ***
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 2: light bulb is no more.
+*** 2: ready to talk
+Philosopher 2 says: Your stomach thinks that all potatoes are mashed.
+*** 2: done talking.
+*** 1: light bulb is no more.
+*** 1: ready to talk
+Philosopher 1 says: Your stomach thinks that all potatoes are mashed.
+*** 4: finished eating
+*** 4: light bulb went on! ***
+*** 3: started eating
+*** 4: light bulb is no more.
+*** 1: done talking.
+*** 1: started eating
+*** 3: finished eating
+*** 3: light bulb went on! ***
+*** 3: light bulb is no more.
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 2: started eating
+*** 4: started eating
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 4: finished eating
+*** 4: light bulb went on! ***
+*** 3: started eating
+*** 1: light bulb is no more.
+*** 1: started eating
+*** 3: finished eating
+*** 3: light bulb went on! ***
+*** 2: light bulb is no more.
+*** 4: light bulb is no more.
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 2: started eating
+*** 4: started eating
+*** 1: light bulb is no more.
+*** 1: ready to talk
+Philosopher 1 says: If my calculator had a history, it would be more embarrassing than my browser history.
+*** 4: finished eating
+*** 4: light bulb went on! ***
+*** 3: light bulb is no more.
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 3: started eating
+*** 4: light bulb is no more.
+*** 2: light bulb is no more.
+*** 3: finished eating
+*** 3: light bulb went on! ***
+*** 4: started eating
+*** 1: done talking.
+*** 2: ready to talk
+Philosopher 2 says: Nothing is on fire, fire is on things.
+*** 3: light bulb is no more.
+*** 4: finished eating
+*** 3: started eating
+*** 1: started eating
+*** 4: light bulb went on! ***
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 2: done talking.
+*** 3: finished eating
+*** 3: light bulb went on! ***
+*** 2: started eating
+*** 4: light bulb is no more.
+*** 4: ready to talk
+Philosopher 4 says: If my calculator had a history, it would be more embarrassing than my browser history.
+*** 1: light bulb is no more.
+*** 3: light bulb is no more.
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 3: started eating
+*** 4: done talking.
+*** 1: ready to talk
+Philosopher 1 says: Nothing is on fire, fire is on things.
+*** 1: done talking.
+*** 3: finished eating
+*** 4: started eating
+*** 3: light bulb went on! ***
+*** 4: finished eating
+*** 4: light bulb went on! ***
+*** 1: started eating
+*** 2: light bulb is no more.
+*** 3: light bulb is no more.
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 2: started eating
+*** 4: light bulb is no more.
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 3: started eating
+*** 3: finished eating
+*** 3: light bulb went on! ***
+*** 4: started eating
+*** 1: light bulb is no more.
+*** 3: light bulb is no more.
+*** 3: ready to talk
+Philosopher 3 says: In English, execute and kill have the same meaning, but on a computer, they're opposites.
+*** 2: light bulb is no more.
+*** 3: done talking.
+*** 4: finished eating
+*** 4: light bulb went on! ***
+*** 1: started eating
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 2: started eating
+*** 1: light bulb is no more.
+*** 4: light bulb is no more.
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 3: started eating
+*** 2: light bulb is no more.
+*** 3: finished eating
+*** 4: started eating
+*** 3: light bulb went on! ***
+*** 4: finished eating
+*** 1: started eating
+*** 4: light bulb went on! ***
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 2: started eating
+*** 3: light bulb is no more.
+*** 3: ready to talk
+Philosopher 3 says: In English, execute and kill have the same meaning, but on a computer, they're opposites.
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 1: light bulb is no more.
+*** 1: started eating
+*** 4: light bulb is no more.
+*** 3: done talking.
+*** 3: started eating
+*** 4: ready to talk
+Philosopher 4 says: Your stomach thinks that all potatoes are mashed.
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 2: light bulb is no more.
+*** 3: finished eating
+*** 3: light bulb went on! ***
+*** 2: started eating
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 3: light bulb is no more.
+*** 3: started eating
+*** 2: light bulb is no more.
+*** 1: light bulb is no more.
+*** 1: started eating
+*** 4: done talking.
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 1: light bulb is no more.
+*** 3: finished eating
+*** 3: light bulb went on! ***
+*** 2: started eating
+*** 4: started eating
+*** 4: finished eating
+*** 4: light bulb went on! ***
+*** 4: light bulb is no more.
+*** 4: ready to talk
+Philosopher 4 says: Instead of colorizing photos, in 50 years we will be removing snapchat filters.
+*** 4: done talking.
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 1: started eating
+*** 3: light bulb is no more.
+*** 3: started eating
+*** 1: finished eating
+*** 1: light bulb went on! ***
+*** 1: light bulb is no more.
+*** 2: light bulb is no more.
+*** 3: finished eating
+*** 3: light bulb went on! ***
+*** 2: started eating
+*** 4: started eating
+*** 3: light bulb is no more.
+*** 3: ready to talk
+Philosopher 3 says: Nothing is on fire, fire is on things.
+*** 2: finished eating
+*** 2: light bulb went on! ***
+*** 2: light bulb is no more.
+*** 4: finished eating
+*** 4: light bulb went on! ***
+*** 3: done talking.
+*** 2: ready to talk
+Philosopher 2 says: If my calculator had a history, it would be more embarrassing than my browser history.
+*** 4: light bulb is no more.
+*** 2: done talking.
+*** 4: ready to talk
+Philosopher 4 says: If my calculator had a history, it would be more embarrassing than my browser history.
+*** 4: done talking.
+*** 4: started eating
+*** 4: finished eating
+*** 4: light bulb went on! ***
+*** 4: light bulb is no more.
+All philosophers have left. System terminates normally.
